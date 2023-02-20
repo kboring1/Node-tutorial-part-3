@@ -1,0 +1,29 @@
+<html lang="en">
+
+<%- include('./partials/head.ejs')%>
+
+<body>
+  <h1>Home</h1>
+  <h2>Your path to becoming a Node.js ninja!</h2>
+    <h1>Home</h1>
+    <h2>Your path to becoming a Node.js ninja!</h2>
+    <%- include('./partials/nav.ejs')%>
+
+  <div class="create-blog content">
+    <form>
+
+     <label for = "title">Blog title:</label>
+     <input type = "text" id="title" required>
+     <label for = "snippet">Blog Snippet:</label>
+     <input type = "snippet" id="snippet" required>
+     <label for = "body">Blog Body:</label>
+     <input type = "body" id="body" required>
+     <textarea id="body" required></textarea>
+     <button>Submit</button>
+    </form>
+  </div>
+</body>
+<%- include('./partials/foot.ejs')%>
+</html>
+
+</html>

@@ -1,0 +1,37 @@
+<html lang="en">
+
+<%- include('./partials/head.ejs')%>
+
+<body>
+
+
+
+
+
+
+  <h1>Home</h1>
+  <h2>Your path to becoming a Node.js ninja!</h2>
+    <h1>Home</h1>
+    <h2>Your path to becoming a Node.js ninja!</h2>
+
+  <%- include('./partials/nav.ejs')%>
+
+  <div class="blogs content">
+    <h2>All Blogs</h2>
+    <% if(blogs.length >0){ %>
+        <%blogs.forEach(blog => {%>
+         <h3 class="title"><%blog.title%></h3> 
+         <p class="snippet"><%blog.snippet%></p>  
+
+     <%})%>
+    <% } else{ %>
+        <p>No blogs to be found</p>
+
+        <%}%>
+  </div>
+
+  <%- include('./partials/foot.ejs')%>
+</body>
+</html>
+
+</html>
